@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar"   dir="rtl"  class="bg-gradient-to-br from-green-50 to-green-100 hydrated min-h-full " >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body  >
+
+    <section class="flex justify-around mt-40">
+        <div class="lg:w-[500px] w-[340px] h-auto flex flex-col items-center bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg ">
+            <p class="text-green-600 lg:w-[500px] w-[340px] h-auto flex flex-col items-center bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg text-lg ">هدفنا ألاول و الاخير صحتك</p>
+            <div class="relative z-0 mt-5">
+                <input type="number" id="weight" aria-describedby="standard_success_help" class="block text-center py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-green-600 appearance-none dark:text-white dark:border-green-500 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer  placeholder:text-green-400 placeholder:italic" placeholder=" "  />
+                <label for="standard_success" class="absolute text-sm text-green-600 dark:text-green-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ">أدخل وزنك بالكيلو غرام</label>
+            </div>
+            <div class="relative z-0 mt-8">
+                <input type="number" id="height" aria-describedby="standard_success_help" class="block text-center py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-green-600 appearance-none dark:text-white dark:border-green-500 dark:focus:border-green-500 focus:outline-none focus:ring-0 focus:border-green-600 peer  placeholder:text-green-400 placeholder:italic"   placeholder=" " />
+                <label for="standard_success" class="absolute text-sm text-green-600 dark:text-green-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 "> أدخل طولك بالسنتيمتر</label>
+                <p class="mt-2 text-sm text-green-600 dark:text-green-500"><span class="font-medium">يجب أن تضع طولك بصيغة عشرية مثلا  1.7</span>
+            </div>
+            <button   class="text-white my-5 bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2" id="calculate" >احسب</button>
+            <div class="lg:w-auto w-auto my-5 h-auto flex p-5 flex-col items-center bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg " id="result"></div>
+            <p class="text-green-600 lg:w-[500px] w-[340px] h-auto flex flex-col text-center  items-center bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg text-[1.1rem] " id="result-statement">    </p>
+
+
+        </div>
+
+
+    </div>
+        </div>
+    </div>
+    
+        </div>
+    </section>
+
+    <section>
+        <div class="overflow-x-auto relative flex justify-center my-[4rem]">
+            <table class="w-auto  text-sm text-left text-gray-500 dark:text-gray-400  rounded-xl shadow-lg ">
+                <thead class="text-xs text-gray-700 uppercase  bg-gradient-to-br from-green-50 to-green-100">
+                    <tr>
+                        <th scope="col" class="py-3 px-6">
+                            كتلة الجسم
+                        </th>
+                        <th scope="col" class="py-3 px-6">
+                         حالة الجسم
+                        </th>
+                     
+                    </tr>
+                </thead>
+                <tbody class="  ">
+                    <tr class="bg-green-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            اصغر من 18.4
+                        </th>
+                        <td class="py-4 px-6">
+                          وزن ناقص
+                        </td>
+                 
+                    </tr>
+                    <tr class="bg-green-100 border-b dark:bg-gray-800 dark:border-gray-700">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                          18.5 - 24.9
+                        </th>
+                        <td class="py-4 px-6">
+                           وزن مثالي
+                        </td>
+                     
+                    </tr>
+                    <tr class="bg-red-50 dark:bg-gray-800">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                          25 - 29.9
+                        </th>
+                        <td class="py-4 px-6">
+                            سمنة 
+                        </td>
+                      
+                    </tr>
+                    <tr class="bg-red-100 dark:bg-gray-800">
+                        <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                         اكبر من 30
+                        </th>
+                        <td class="py-4 px-6">
+                            سمنة مفرطة
+                        </td>
+                    
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div class="flex justify-around mb-[7rem] ">
+        <p class="text-green-600 lg:w-[500px] w-[340px] h-auto flex flex-col items-center 
+        bg-gradient-to-br from-green-50 to-green-100 rounded-xl shadow-lg text-lg text-center ">  مؤشرة كتلة الجسم BMI
+        يسمى باللغة العربية مؤشر كتلة الجسم وبالإنجليزية يرمز اليه بالحروف الثلاثة BMI اختصار للمصطلح body mass index وهو مؤشر عالمي يستخدم لقياس طبيعة جسم الإنسان وتحديد نوع الجسم هل هو سمين أم نحيف أم طبيعي، ويتم تحديد نوع الجسم من خلال العلاقة بين الوزن والطول ويتم ذلك من خلال عملية حسابية بسيطة جداً.
+        
+          </p>
+    </div>
+    
+<script src="index4.js"></script>
+</body>
+</html>
